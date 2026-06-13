@@ -49,28 +49,12 @@ A live end-to-end verification run was executed on the active ticket `EH-4`. Pro
 The following verified system screenshots correspond to the files in the screenshots directory, serving as proof of deployment:
 
 ### Phase 1: Request Ingestion & Ticket Initialization
-![01: Ticket Creation Layout](screenshots/01_laptop_request_ticket_created.png)
 *Figure 1: Initial helpdesk customer portal view showing a newly generated service request ticket for hardware procurement.*
+![01: Ticket Creation Layout](screenshots/01_laptop_request_ticket_created.png)
 
 ### Phase 2: Resource Assignment & SLA Tracking
-![02: Technician Allocation Schema](screenshots/02_assigning_ticket_to_technician.png)
 *Figure 2: Technician assignment dashboard documenting administrative ownership allocation and SLA status confirmation.*
+![02: Technician Allocation Schema](screenshots/02_assigning_ticket_to_technician.png)
 
 ### Phase 3: Relational Database Schema Extension
-![03: Custom Metadata Configuration](screenshots/03_creating_custom_asset_fields.png)
-*Figure 3: Global administrator settings panel validating the database configuration profiles for the Asset Tag and Serial Number custom fields.*
-
-### Phase 4: UI Screen Layout Interface Mapping
-![04: Screen Layout Architecture](screenshots/04_linking_asset_fields_to_screen.png)
-*Figure 4: Project screen mapping layout interface illustrating where the custom fields are injected into the standard view/edit profiles.*
-
-### Phase 5: Production Live Verification Data Run
-![05: Production Field Validation Run](screenshots/05_final_ticket_with_custom_asset_fields.png)
-*Figure 5: Live execution run of a production asset ticket validating proper UI rendering and secure field committing using actual corporate data properties.*
-
----
-
-## Technical Infrastructure Summary
-* **Deployment Platform:** Jira Service Management (Cloud Enterprise Framework)
-* **Core Framework:** ITIL v4 Hardware Asset Management (HAM) Lifecycle Strategy
-* **Scope Identification:** `EH` Space Domain / Request Fulfillment Screen Mapping Schemes
+*Figure
