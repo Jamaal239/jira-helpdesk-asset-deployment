@@ -21,47 +21,47 @@ The deployment was executed across five distinct operational phases, balancing f
 
 ### 01. Service Request Ingestion
 An end-user initializes a hardware procurement request via the enterprise Customer Portal. The system automatically creates tracking ticket `EH-4`, populates the default system parameters, and places the issue into the unassigned triage queue.
-* **Structural Verification Reference:** `01_laptop_request_ticket_created.png`
+* **Structural Verification Reference:** `screenshots/01_laptop_request_ticket_created.png`
 
 ### 02. SLA Preservation & Operational Allocation
 The service request is audited by the queue coordinator. Ownership is explicitly assigned to a system administrator/technician to establish direct operational accountability and halt response Service Level Agreement (SLA) timers.
-* **Structural Verification Reference:** `02_assigning_ticket_to_technician.png`
+* **Structural Verification Reference:** `screenshots/02_assigning_ticket_to_technician.png`
 
 ### 03. Custom Schema Field Configuration
 To capture precise corporate identifier data not natively supported by the standard out-of-the-box Jira data model, global custom fields for `Asset Tag` and `Serial Number` were provisioned via Jira Admin Text Schema settings.
-* **Structural Verification Reference:** `03_creating_custom_asset_fields.png`
+* **Structural Verification Reference:** `screenshots/03_creating_custom_asset_fields.png`
 
 ### 04. Functional Screen Layout Mapping
 The newly engineered database fields were bound directly to project-specific Screen Configurations. By modifying the target `Request Fulfilment View/Edit Screen`, the fields are structurally injected into the technician's primary visual workspace.
-* **Structural Verification Reference:** `04_linking_asset_fields_to_screen.png`
+* **Structural Verification Reference:** `screenshots/04_linking_asset_fields_to_screen.png`
 
 ### 05. Production Run & Data Validation
 A live end-to-end verification run was executed on the active ticket `EH-4`. Production infrastructure values were successfully committed to the database, confirming full integration between the database schema and the live UI layout.
 * **Production Test Entries:**
   * **Asset Tag:** `IT-LAP-4029`
   * **Serial Number:** `5CD2185XYZ`
-* **Structural Verification Reference:** `05_final_ticket_with_custom_asset_fields.png`
+* **Structural Verification Reference:** `screenshots/05_final_ticket_with_custom_asset_fields.png`
 
 ---
 
 ## Repository Artifact Verification
 
-The following verified system screenshots correspond to the files in the root directory, serving as proof of deployment:
+The following verified system screenshots correspond to the files in the screenshots directory, serving as proof of deployment:
 
 ### Phase 1: Request Ingestion & Ticket Initialization
-![01: Ticket Creation Layout](01_laptop_request_ticket_created.png)
+![01: Ticket Creation Layout](screenshots/01_laptop_request_ticket_created.png)
 
 ### Phase 2: Resource Assignment & SLA Tracking
-![02: Technician Allocation Schema](02_assigning_ticket_to_technician.png)
+![02: Technician Allocation Schema](screenshots/02_assigning_ticket_to_technician.png)
 
 ### Phase 3: Relational Database Schema Extension
-![03: Custom Metadata Configuration](03_creating_custom_asset_fields.png)
+![03: Custom Metadata Configuration](screenshots/03_creating_custom_asset_fields.png)
 
 ### Phase 4: UI Screen Layout Interface Mapping
-![04: Screen Layout Architecture](04_linking_asset_fields_to_screen.png)
+![04: Screen Layout Architecture](screenshots/04_linking_asset_fields_to_screen.png)
 
 ### Phase 5: Production Live Verification Data Run
-![05: Production Field Validation Run](05_final_ticket_with_custom_asset_fields.png)
+![05: Production Field Validation Run](screenshots/05_final_ticket_with_custom_asset_fields.png)
 
 ---
 
